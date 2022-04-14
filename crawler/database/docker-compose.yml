@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    fiiswallet:
+        image: postgres
+        environment:
+            POSTGRES_PASSWORD: "fiiswallet"
+        ports:
+            - "15432:5432"
+        volumes:
+            - ./data/:/var/lib/postgresql/data

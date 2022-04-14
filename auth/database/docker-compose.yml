@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    microbase:
+        image: postgres
+        environment:
+            POSTGRES_PASSWORD: "passpost"
+        ports:
+            - "15432:5432"
+        volumes:
+            - ./data/:/var/lib/postgresql/data 
